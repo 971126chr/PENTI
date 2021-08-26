@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+label {
+    cursor: pointer;
+}
+
+/*start*/
+
+.wrap, .all-contents {
+    width: 1980px;
+    margin: 0 auto;
+    background: url("../img/header/all-bg.png") repeat-x;
+}
+.all-contents {
+    width: 1000px;
+    background: none;
+}
+.header {
+    text-align: center;
+    line-height: 39px;
+    position: relative;
+    padding: 0 0 19px 12px;
+    background: url("../img/header/header-bg.png") no-repeat center;
+}
+h1.penti-logo a {
+    font-size: 0;
+    background: url("../img/header/penti-logo.png") no-repeat bottom right;
+    padding: 26px 87.5px 27px 81.5px;
+    display: inline-block;
+}
+ul.header-list::after, ul.main-tab-list::after, ul.main-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+ul.header-list {
+    position: absolute;
+    top: 2px;
+    right: -3px;
+}
+ul.header-list li {
+    float: left;
+}
+ul.header-list li:not(:first-child) a {
+    padding-left: 10px;
+}
+ul.header-list li:not(:last-child) a {
+    padding-right: 10px;
+}
+ul.header-list li a {
+    font-size: 11px;
+    color: #484848;
+}
+ul.header-list li a:hover, ul.header-list li a.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #8009ef;
+}
+
+/*main start*/
+
+.main {
+    padding-top: 11px;
+    background: url("../img/header/header-border.png") no-repeat center top;
+}
+.main-tab-list-position {
+    text-align: center;
+    line-height: 0;
+}
+ul.main-tab-list {
+    display: inline-block;
+}
+ul.main-tab-list li {
+    float: left;
+    background: url("../img/main/main-tab-list-bg.png") no-repeat center;
+    line-height: 39px;
+    width: 104px;
+}
+ul.main-tab-list li a {
+    font: 16px YDIYGO160-KSCpc-EUC-H, sans-serif;
+    color: #3e3e3e;
+    font-weight: bold;
+    padding: 8.5px 15.49px;
+    border: 1px solid #d1d1d1;
+    border-bottom: none;
+    position: relative;
+}
+ul.main-tab-list li:not(:last-child) {
+    margin-right: 3px;
+}
+ul.main-tab-list li:first-child a {
+    padding: 8.5px 35px;
+}
+ul.main-tab-list li:nth-child(2) a, ul.main-tab-list li:nth-child(3) a {
+    padding: 8.5px 27px;
+}
+ul.main-tab-list li:last-child a {
+    padding: 8.5px 7.49px;
+}
+ul.main-tab-list li a:hover, ul.main-tab-list li.active a {
+    color: #ffffff;
+    background: #8009ef;
+    border: 1px solid #8009ef;
+    border-bottom: none;
+}
+span.speech-bubble {
+    background: url("../img/main/speech-bubble-all.png") no-repeat;
+    line-height: 32px;
+    display: inline-block;
+    padding: 0 11.07px 7px;
+    line-height: 25px;
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    top: -20px;
+    right: 28px;
+}
+/*
+span.speech-bubble {
+    background: url("../img/main/speech-bubble.png") repeat-x;
+    line-height: 32px;
+    display: inline-block;
+}
+span.speech-bubble-left {
+    background: url("../img/main/speech-bubble-left.png") no-repeat left;
+    display: inline-block;
+}
+span.speech-bubble-right {
+    background: url("../img/main/speech-bubble-right.png") no-repeat right;
+    display: inline-block;
+}
+*/
+ul.main-tab-list li:nth-child(4) span.speech-bubble, ul.main-tab-list li:last-child span.speech-bubble {
+    padding: 0 14.55px 7px;
+}
+.main-list-box {
+    border-top: 6px solid #8009ef;
+    background: #272524;
+    padding-left: 5px;
+}
+ul.main-list li {
+    float: left;
+    width: 196px;
+}
+ul.main-list li:not(:first-child) {
+    border-left: 1px solid #000000;
+}
+ul.main-list li:not(:last-child) {
+    border-right: 1px solid #585858;
+}
+dl.main-dl {
+    padding: 20px 0 26px 4px;
+}
+dl.main-dl dt.first-dt a {
+    background: url("../img/main/dt-gapeong.png") no-repeat;
+    font-size: 0;
+    padding-top: 16px;
+    display: block;
+}
+dl.main-dl dd {
+    position: relative;
+}
+dl.main-dl dd a {
+    line-height: 20px;
+    font-size: 11px;
+    color: #ffffff;
+    letter-spacing: 0.9px;
+    display: inline-block;
+}
+dl.main-dl dd:nth-child(2) {
+    margin-top: 9px;
+}
+dl.main-dl dd a:hover, dl.main-dl dd a.active {
+    /*border-bottom: 1px solid #ffffff;
+    padding: 0 4px 0 5px;*/
+    text-decoration: underline;
+}
+span.red-n, span.blue-r {
+    background: url("../img/main/red-n.png") no-repeat;
+    font-size: 0;
+    padding: 5.5px;
+    vertical-align: middle;
+}
+span.blue-r {
+    background: url("../img/main/blue-r.png") no-repeat;
+}
+.rn-position {
+    display: inline-block;
+}
+.rn-position > span.red-n {
+    margin-left: -3px;
+}
+dl.main-dl dd:nth-child(8) .rn-position {
+    margin-left: -3px;
+}
