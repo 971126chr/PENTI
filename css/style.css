@@ -29,7 +29,7 @@ h1.penti-logo a {
     padding: 26px 87.5px 27px 81.5px;
     display: inline-block;
 }
-ul.header-list::after, ul.main-tab-list::after, ul.main-list::after {
+ul.header-list::after, ul.main-tab-list::after, ul.main-list::after, ul.suggest-list::after, ul.suggest-sns-list::after {
     content: "";
     display: block;
     clear: both;
@@ -141,7 +141,7 @@ ul.main-tab-list li:nth-child(4) span.speech-bubble, ul.main-tab-list li:last-ch
 }
 ul.main-list li {
     float: left;
-    width: 196px;
+    width: 20%;
 }
 ul.main-list li:not(:first-child) {
     border-left: 1px solid #000000;
@@ -150,13 +150,26 @@ ul.main-list li:not(:last-child) {
     border-right: 1px solid #585858;
 }
 dl.main-dl {
-    padding: 20px 0 26px 4px;
+    padding: 20px 0 27px 4px;
+    height: 292px;
 }
-dl.main-dl dt.first-dt a {
+dl.main-dl dt a {
     background: url("../img/main/dt-gapeong.png") no-repeat;
     font-size: 0;
     padding-top: 16px;
     display: block;
+}
+ul.main-list li:nth-child(2) dl.main-dl dt a {
+    background: url("../img/main/nami-island.png") no-repeat;
+}
+ul.main-list li:nth-child(3) dl.main-dl dt a {
+    background: url("../img/main/cheongpyeong.png") no-repeat;
+}
+ul.main-list li:nth-child(4) dl.main-dl dt a {
+    background: url("../img/main/yangpyeong.png") no-repeat;
+}
+ul.main-list li:last-child dl.main-dl dt a {
+    background: url("../img/main/other.png") no-repeat;
 }
 dl.main-dl dd {
     position: relative;
@@ -188,9 +201,273 @@ span.blue-r {
 .rn-position {
     display: inline-block;
 }
-.rn-position > span.red-n {
+.rn-position > span.red-n,
+ul.main-list li:nth-child(3) dl.main-dl dd:nth-child(4) span.blue-r {
     margin-left: -3px;
 }
-dl.main-dl dd:nth-child(8) .rn-position {
-    margin-left: -3px;
+ul.main-list li:first-child dl.main-dl dd:nth-child(4) .rn-position,
+ul.main-list li dl.main-dl dd:nth-child(10) span.blue-r,
+ul.main-list li:first-child dl.main-dl dd:last-child .rn-position,
+ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(4) span.blue-r,
+ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(8) .rn-position,
+ul.main-list li:nth-child(4) dl.main-dl dd:nth-child(4) .rn-position,
+ul.main-list li:nth-child(4) dl.main-dl dd:last-child .rn-position,
+ul.main-list li:last-child dl.main-dl dd:nth-child(4) .rn-position,
+ul.main-list li:last-child dl.main-dl dd:nth-child(5) span.red-n,
+ul.main-list li:last-child dl.main-dl dd:last-child .rn-position {
+    margin-left: -1px;
+}
+ul.main-list li:first-child dl.main-dl dd:nth-child(8) .rn-position {
+    margin-left: 3px;
+}
+dl.main-dl dd a:focus, dl.main-dl dd a.focus {
+    background: #8009ef;
+    font-weight: bold;
+}
+ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(6) span.blue-r,
+ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(7) span.red-n,
+ul.main-list li:nth-child(3) dl.main-dl dd:nth-child(6) span.blue-r,
+ul.main-list li:nth-child(4) dl.main-dl dd:nth-child(3) span.blue-r,
+ul.main-list li:last-child dl.main-dl dd:nth-child(6) span.blue-r {
+    margin-left: -2px;
+}
+ul.main-list li:last-child dl.main-dl dd:nth-child(2) span.blue-r {
+    margin-left: 1px;
+}
+.notice {
+    line-height: 44px;
+    background: #f1f1f1;
+}
+.notice-box, .suggest {
+    width: 40%;
+    padding-left: 16px;
+    display: inline-block;
+}
+.notice h2 {
+    display: inline-block;
+}
+.notice h2 a {
+    font-size: 0;
+    background: url("../img/main/main-list-under-notice.png") no-repeat;
+    padding: 7px 26px;
+}
+a.notice-text {
+    font-size: 11px;
+    color: #484848;
+    vertical-align: bottom;
+}
+.suggest {
+    width: 60%;
+    margin-left: -6px;
+    padding-left: 1px;
+    vertical-align: middle;
+}
+h2.suggest-h2 {
+    font-size: 0;
+    background: url("../img/main/suggest-friend.png") no-repeat;
+    padding: 0 53.5px;
+    display: inline-block;
+    height: 14px;
+    vertical-align: middle;
+}
+ul.suggest-list, ul.suggest-sns-list {
+    display: inline-block;
+}
+ul.suggest-list li, ul.suggest-sns-list li {
+    float: left;
+}
+ul.suggest-list {
+    line-height: 12px;
+    vertical-align: middle;
+    margin-left: 7px;
+}
+ul.suggest-sns-list li:not(:first-child) {
+    margin-left: 8px;
+}
+ul.suggest-list li:not(:last-child) {
+    background: url("../img/main/suggest-list-bar.png") no-repeat right center;
+}
+ul.suggest-list > li:first-child {
+    padding-right: 21px;
+}
+ul.suggest-list > li:nth-child(2) {
+    padding: 0 17px 0 16px;
+}
+ul.suggest-list > li:nth-child(3) {
+    padding: 0 14px 0 10px;
+}
+ul.suggest-list > li:nth-child(4) {
+    padding: 0 18px 0 20px;
+}
+ul.suggest-list > li:last-child {
+    padding-left: 14px;
+}
+ul.suggest-list > li > a {
+    font-size: 0;
+    background: url("../img/main/suggest-list-2.png") no-repeat;
+    padding: 7px 31.5px;
+    vertical-align: middle;
+}
+ul.suggest-list > li:nth-child(3) > a {
+    background: url("../img/main/suggest-list-3.png") no-repeat;
+    padding: 7px 23.5px;
+}
+ul.suggest-list > li:nth-child(4) > a,
+ul.suggest-list > li:last-child > a {
+    background: url("../img/main/suggest-list-4.png") no-repeat;
+    padding: 7px 25.5px;
+}
+ul.suggest-list > li:last-child > a {
+    background: url("../img/main/suggest-list-5.png") no-repeat;
+}
+.lowest-price-box {
+    padding-left: 2px;
+}
+.lowest-price {
+    border: 1px solid #d4d4d4;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #b2b2b2;
+    box-shadow: 0 4px 1px 1px #e3e3e3;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px 19px 0 17px;
+    width: 996px;
+    position: relative;
+}
+span.lowest-price-ribbon {
+    background: url("../img/main/pyeongchang-ribbon.png") no-repeat;
+    font-size: 0;
+    padding: 52px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.riverhill {
+    background: url("../img/main/red-post-bg.png") no-repeat;
+    width: 960px;
+    height: 400px;
+}
+.riverhill-text-box {
+    background: url("../img/main/lowest-price-black-bg.png") no-repeat;
+    width: 380px;
+    height: 400px;
+    padding: 100px 39px 0 34px;
+    font-size: 0;
+}
+p.riverhill-text {
+    background: url("../img/main/riverhill-text.png") no-repeat;
+    padding: 78.5px 153.5px ;
+}
+/*
+h3.riverhill-h3 {
+    background: url("../img/main/riverhill-green.png") no-repeat;
+    padding: 14px 152.5px;
+}
+span.riverhill-real-text {
+    background: url("../img/main/riverhill-real-text.png") no-repeat;
+    padding: 18px 120px;
+    line-height: 42px;
+}
+*/
+.sale-time {
+    position: absolute;
+    top: 34px;
+    right: 35px;
+}
+span.sale-time-bg {
+    background: url("../img/main/riverhill-time.png") no-repeat;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 3px 3.94px;
+}
+span.sale-time-dot {
+    background: url("../img/main/riverhill-time-dote.png") no-repeat center;
+    padding: 0 3px;
+}
+.sale-time .sale-time-bg:nth-child(2), 
+.sale-time .sale-time-bg:nth-child(5),
+.sale-time .sale-time-bg:last-child {
+    margin-left: -4px;
+}
+.sale-time .sale-time-bg:nth-child(4),
+.sale-time .sale-time-bg:nth-child(7) {
+    margin-left: 3px;
+}
+.sale-percent {
+    height: 135px;
+    padding-left: 40px;
+}
+.percent-price {
+    width: 545px;
+    display: inline-block;
+    padding-top: 24px;
+}
+span.percent65 {
+    background: url("../img/main/65per.png") no-repeat;
+    padding: 47px 106.5px;
+    font-size: 0;
+    display: inline-block;
+}
+span.sale-price {
+    font-size: 0;
+    background: url("../img/main/sale-35800.png") no-repeat;
+    padding: 47.5px 136px;
+    margin-left: 8px;
+    display: inline-block;
+}
+.riverhill-buy-ticket {
+    width: 373px;
+    font-size: 12px;
+    color: #000000;
+    display: inline-block;
+    background: url("../img/main/sale-per-bar.png") no-repeat;
+    padding: 11px 0 0 34px;
+    margin-left: -6px;
+    text-align: center;
+    height: 135px;
+    vertical-align: middle;
+}
+strong.buy-ticket-people {
+    color: #8009ef;
+}
+span.now-buyer {
+    font-size: 0;
+    background: url("../img/main/now-buyer.png") no-repeat;
+    padding: 14px 104px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 9px;
+}
+button.buy-ticket-btn {
+    background: url("../img/main/ticket-buy-btn-all.png") no-repeat;
+    border: none;
+    font-size: 0;
+    padding: 28px 137px;
+    margin-top: 10px;
+}
+/*
+button.buy-ticket-btn {
+    background: url("../img/main/ticket-buy-btn.png") repeat-x;
+    border: none;
+    font-size: 0;
+    line-height: 56px;
+}
+span.buy-ticket-btn-left {
+    display: inline-block;
+    background: url("../img/main/ticket-buy-btn-left.png") no-repeat left center;
+    padding-left: 110px;
+}
+span.buy-ticket-btn-right {
+    display: inline-block;
+    background: url("../img/main/ticket-buy-btn-right.png") no-repeat right center;
+    padding-right: 7px;
+}
+span.buy-ticket-btn-text {
+    background: url("../img/main/ticket-buy-text.png") no-repeat;
+    padding: 17px 84.5px;
+}
+*/
+.tab-menu-wrap {
+    margin-top: 25px;
 }
