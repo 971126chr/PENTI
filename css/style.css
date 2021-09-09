@@ -68,7 +68,7 @@ ul.header-list li a:hover, ul.header-list li a.active {
     text-align: center;
     line-height: 0;
 }
-ul.main-tab-list {
+ul.main-tab-list, .rn-position, .notice h2, ul.suggest-list, ul.suggest-sns-list, .purchase-contents, .review-notice-box {
     display: inline-block;
 }
 ul.main-tab-list li {
@@ -198,9 +198,6 @@ span.red-n, span.blue-r {
 span.blue-r {
     background: url("../img/main/blue-r.png") no-repeat;
 }
-.rn-position {
-    display: inline-block;
-}
 .rn-position > span.red-n,
 ul.main-list li:nth-child(3) dl.main-dl dd:nth-child(4) span.blue-r {
     margin-left: -3px;
@@ -243,9 +240,6 @@ ul.main-list li:last-child dl.main-dl dd:nth-child(2) span.blue-r {
     padding-left: 16px;
     display: inline-block;
 }
-.notice h2 {
-    display: inline-block;
-}
 .notice h2 a {
     font-size: 0;
     background: url("../img/main/main-list-under-notice.png") no-repeat;
@@ -269,9 +263,6 @@ h2.suggest-h2 {
     display: inline-block;
     height: 14px;
     vertical-align: middle;
-}
-ul.suggest-list, ul.suggest-sns-list {
-    display: inline-block;
 }
 ul.suggest-list li, ul.suggest-sns-list li {
     float: left;
@@ -523,21 +514,93 @@ ul.client-tab-list li:not(:first-child) {
     background: url("../img/main/checkpoint-box.png") no-repeat;
     height: 96px;
 }
-strong.c-p-title, ul.checkpoint-list, strong.purchase-title-text {
+strong.c-p-title, ul.checkpoint-list, strong.purchase-title-text, ul.purchase-all-list, ol.easy-use-list, a.easy-use-btn {
     font-size: 0;
 }
 .purchase-wrap {
     background: #ffffff;
 }
 .purchase-box {
-    background: url("../img/main/purchase-bg.png") no-repeat;
-    padding: 10px 0 0 19px;
-    min-height: 400px;
+    background: url("../img/main/purchase-bg.png") no-repeat center center;
+    padding: 10px 0 0 1px;
+    min-height: 371px;
 }
 span.purchase-title {
-    padding-left: 8px;
+    padding-left: 26px;
 }
 strong.purchase-title-text {
     background: url("../img/main/purchase-title.png") no-repeat;
     padding: 15px 110.5px;
+}
+ul.purchase-all-list {
+    margin-top: 27px;
+}
+ul.purchase-all-list li {
+    background: url("../img/main/purchase-marker.png") no-repeat left top;
+    padding-left: 24px;
+}
+ul.purchase-all-list li dl.purchase-dl {
+    background: url("../img/main/purchase-list-2.png") no-repeat;
+    padding: 34px 170.5px;
+    margin-top: 25px;
+}
+ul.purchase-all-list li:first-child dl.purchase-dl {
+    background: url("../img/main/purchase-list-1.png") no-repeat right;
+    padding: 39.5px 209.5px;
+}
+ul.purchase-all-list li:last-child {
+    margin-top: 29px;
+}
+span.purchase-text {
+    background: url("../img/main/purchase-list-3.png") no-repeat;
+    padding: 34px 181.5px;
+    display: inline-block;
+}
+.review-notice-box {
+    vertical-align: top;
+    font-size: 0;
+    margin: 16px 0 0 55px;
+}
+strong.review-notice-title {
+    background: url("../img/main/notice-title.png") no-repeat;
+    padding: 15px 74.5px;
+}
+p.review-notice-text {
+    background: url("../img/main/notice-text.png") no-repeat;
+    padding: 80.5px 190.5px;
+    margin: 29px 0 0 1px;
+}
+.spring-position {
+    position: absolute;
+    left: 283px;
+    bottom: -23px;
+    z-index: 1;
+}
+span.spring-left, span.spring-right {
+    background: url("../img/main/spring.png") no-repeat;
+    padding: 15px 14px;
+    display: inline-block;
+}
+span.spring-right {
+    margin-left: 366px;
+}
+.easy-use {
+    padding: 31px 17px 15px 5px;
+    margin-top: 7px;
+}
+strong.easy-use-title {
+    background: url("../img/main/easy-use.png") no-repeat right center;
+    font-size: 0;
+    padding: 15px 145px 15px 186px;
+}
+ol.easy-use-list {
+    background: url("../img/main/easy-use-list.png") no-repeat;
+    padding: 73.5px 0;
+    margin-top: 39px;
+}
+a.easy-use-btn {
+    background: url("../img/main/easy-use-btn.png") no-repeat right;
+    padding: 41.5px 0;
+    display: block;
+    margin-top: 30px;
 }
