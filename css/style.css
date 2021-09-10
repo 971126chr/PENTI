@@ -514,7 +514,7 @@ ul.client-tab-list li:not(:first-child) {
     background: url("../img/main/checkpoint-box.png") no-repeat;
     height: 96px;
 }
-strong.c-p-title, ul.checkpoint-list, strong.purchase-title-text, ul.purchase-all-list, ol.easy-use-list, a.easy-use-btn {
+strong.c-p-title, ul.checkpoint-list, strong.purchase-title-text, ul.purchase-all-list, ol.easy-use-list, a.easy-use-btn, h2.discount-h2, span.discount-area, p.discount-p, span.discount-percent, h3.discount-table-caption, table.discount-table, span.discount-arrow, p.review-last-p, span.review-last-span, p.inquire-p, span.inquire-small-p, button.add-comment-btn {
     font-size: 0;
 }
 .purchase-wrap {
@@ -603,4 +603,285 @@ a.easy-use-btn {
     padding: 41.5px 0;
     display: block;
     margin-top: 30px;
+}
+.discount {
+    background: #272524;
+    padding: 3px 0 49px 0;
+    margin-top: 7px;
+}
+.discount-h2-box {
+    background: url("../img/main/discount-bg.png") no-repeat;
+    height: 130px;
+    padding-top: 37px;
+}
+h2.discount-h2 {
+    background: url("../img/main/discount-deco-text.png") no-repeat center center;
+    padding: 36.5px 0;
+}
+.discount-img-box {
+    padding: 0 17px;
+    margin-top: 18px;
+    position: relative;
+}
+span.discount-area {
+    background: url("../img/main/discount-area.png") no-repeat;
+    padding: 30px 68.5px;
+    position: absolute;
+    top: 0;
+    right: 48px;
+}
+.discount-contents {
+    padding: 34px 33px 0 29px;
+    position: relative;
+}
+span.discount-percent {
+    background: url("../img/main/discount-circle.png") no-repeat;
+    padding: 66px;
+    position: absolute;
+    top: 74px;
+    left: 75px;
+    z-index: 1;
+}
+p.discount-p {
+    background: url("../img/main/discount-p.png") no-repeat center;
+    padding: 54px 0;
+}
+.discount-table-box {
+    margin-top: 20px;
+    background: url("../img/main/discount-p-border-bottom.png") no-repeat top;
+    padding-top: 35px;
+}
+table.discount-table {
+    width: 100%;
+}
+table.discount-table > thead > tr {
+    line-height: 69px;
+    border-bottom: 3px solid #3d3d3d;
+}
+table.discount-table > thead > tr > th:nth-child(2) {
+    background: url("../img/main/discount-th-1.png") no-repeat center;
+}
+table.discount-table > thead > tr > th:nth-child(3) {
+    background: url("../img/main/discount-th-2.png") no-repeat center;
+}
+table.discount-table > thead > tr > th:last-child {
+    background: url("../img/main/discount-th-3.png") no-repeat center;
+}
+table.discount-table > tbody > tr {
+    padding-left: 3px;
+    border-bottom: 1px solid #3d3d3d;
+}
+table.discount-table > tbody > tr:first-child {
+    height: 101px;
+}
+table.discount-table > tbody > tr:nth-child(2) {
+    height: 104px;
+}
+table.discount-table > tbody > tr:last-child {
+    height: 99px;
+}
+table.discount-table > tbody > tr > th {
+    background: url("../img/main/discount-td-left.png") no-repeat right center;
+    display: inline-block;
+    padding: 63.5px 69.5px 35.5px 72.5px;
+}
+table.discount-table > tbody > tr > td {
+    background: url("../img/main/discount-td.png") no-repeat center;
+    position: relative;
+}
+span.discount-arrow {
+    background: url("../img/main/discount-td-arrow.png") no-repeat;
+    padding: 136px 42px;
+    position: absolute;
+    top: 19px;
+    right: -2px;
+}
+table.discount-table > tbody > tr > td:nth-child(3) > span.discount-arrow {
+    right: -5px;
+}
+table.discount-table > tbody > tr > td:last-child > span.discount-arrow {
+    right: -7px;
+}
+.review-last {
+    padding: 55px 17px 73px;
+}
+p.review-last-p {
+    background: url("../img/main/review-last-p.png") no-repeat center;
+    padding: 31.5px 0;
+}
+span.review-last-span {
+    background: url("../img/main/review-last-span.png") no-repeat center;
+    padding: 32px 0;
+    display: block;
+    margin: 52px 0 46px 0;
+}
+a.review-more-dots {
+    display: block;
+    text-align: center;
+    margin-top: 66px;
+}
+
+/*문의 시작*/
+
+.inquire {
+    padding: 0 20px 132px 17px;
+}
+p.inquire-p {
+    display: inline-block;
+    line-height: 61px;
+    background: url("../img/main/inquire-p.png") no-repeat left center;
+    padding: 0 115.5px;
+}
+span.inquire-small-p {
+    background: url("../img/main/inquire-small-p.png") no-repeat bottom right;
+    padding: 12px 170.5px 6px 300.5px;
+}
+.add-comment-wrap {
+    padding-left: 3px;
+}
+.add-comment-box {
+    height: 157px;
+    background: #e8e8e8;
+    padding: 20px;
+}
+textarea.add-comment-text-box {
+    border: none;
+    width: 770px;
+    height: 100%;
+    padding: 14.5px 0 0 16px;
+    font-size: 12px;
+    color: #474747;
+}
+button.add-comment-btn {
+    background: url("../img/main/add-comment-btn.png") no-repeat;
+    border: none;
+    padding: 58.5px 70.5px;
+    margin-left: -3px;
+}
+.comments-wrap {
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+span.manager-comment, span.manager-gray-comment {
+    background: #800aef;
+    border-radius: 8px;
+    font-size: 12px;
+    color: #ffffff;
+    display: inline-block;
+    width: 170px;
+    padding: 26.5px 0 30.5px 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    vertical-align: top;
+    position: relative;
+}
+span.manager-speech-arrow, span.gray-comment-arrow {
+    background: url("../img/main/blue-speech-bubble.png") no-repeat;
+    padding: 4px 10.5px;
+    position: absolute;
+    bottom: 20px;
+    right: -21px;
+}
+span.manager-gray-comment {
+    background: #e8e8e8;
+    font-weight: lighter;
+    color: #484848;
+    width: 742px;
+    margin-left: 36px;
+    line-height: 18px;
+    padding: 16.5px 0 16.5px 20px;
+    letter-spacing: 0;
+}
+strong.gray-comment-strong {
+    color: #800aef;
+    display: block;
+}
+span.manager-gray-comment p:nth-child(2) {
+    margin-top: 12px;
+}
+span.manager-gray-comment p:nth-child(3), span.manager-gray-comment p:nth-child(4) {
+    margin-top: 18px;
+}
+button.del-x {
+    background: url("../img/main/del-x.png") no-repeat center;
+    padding: 6.5px;
+    margin-left: 8px;
+    border: none;
+    vertical-align: middle;
+    content: "";
+}
+span.time {
+    display: block;
+    margin-top: 12px;
+    color: #a1a1a1;
+}
+span.gray-comment-arrow {
+    background: url("../img/main/gray-sppech-bubble-right.png") no-repeat;
+    left: -21px;
+    top: 20px;
+}
+span.client-comment {
+    color: #000000;
+    background: #e8e8e8;
+}
+span.client-speech-left {
+    background: url("../img/main/gray-sppech-bubble-left.png") no-repeat;
+}
+span.client-right-comment p:nth-child(2) {
+    margin-top: 18px;
+}
+span.client-right-comment p:nth-child(3) button.del-x {
+    margin-left: 3px;
+}
+span.re-btn-position {
+    margin-top: 16.5px;
+    display: inline-block;
+}
+button.re-btn {
+    border: none;
+    background: url("../img/main/fast-comment-btn.png") no-repeat;
+    color: #ffffff;
+    padding: 1.5px 6px 1.5px 15px;
+}
+span.re-btn-position button.re-btn:not(:first-child) {
+    margin-left: 1px;
+}
+span.re-comment {
+    margin-top: 5.5px;
+    display: inline-block;
+}
+span.re {
+    background: url("../img/main/re.png") no-repeat;
+    font-size: 0;
+    padding: 4.5px 13.5px;
+    vertical-align: top;
+}
+strong.re-comment-id {
+    margin-left: 7px;
+}
+time.re-comment-time {
+    color: #a1a1a1;
+    margin-left: 3px;
+}
+span.re-comment-p {
+    margin: 4px 0 0 36px;
+    display: inline-block;
+}
+.pages {
+    text-align: center;
+    margin-top: 27px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #212121;
+}
+a.page-before::before, a.page-after::before {
+    background: url("../img/main/inquire-left-arrow.png") no-repeat center center;
+    padding: 2px 10px;
+    content: "";
+}
+a.page-after {
+    background: url("../img/main/inquire-right-arrow.png") no-repeat center center;
+}
+.pages a {
+    padding: 0 3px;
 }
