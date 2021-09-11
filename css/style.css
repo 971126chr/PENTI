@@ -63,6 +63,7 @@ ul.header-list li a:hover, ul.header-list li a.active {
 .main {
     padding-top: 11px;
     background: url("../img/header/header-border.png") no-repeat center top;
+    position: relative;
 }
 .main-tab-list-position {
     text-align: center;
@@ -514,7 +515,7 @@ ul.client-tab-list li:not(:first-child) {
     background: url("../img/main/checkpoint-box.png") no-repeat;
     height: 96px;
 }
-strong.c-p-title, ul.checkpoint-list, strong.purchase-title-text, ul.purchase-all-list, ol.easy-use-list, a.easy-use-btn, h2.discount-h2, span.discount-area, p.discount-p, span.discount-percent, h3.discount-table-caption, table.discount-table, span.discount-arrow, p.review-last-p, span.review-last-span, p.inquire-p, span.inquire-small-p, button.add-comment-btn {
+strong.c-p-title, ul.checkpoint-list, strong.purchase-title-text, ul.purchase-all-list, ol.easy-use-list, a.easy-use-btn, h2.discount-h2, span.discount-area, p.discount-p, span.discount-percent, h3.discount-table-caption, table.discount-table, span.discount-arrow, p.review-last-p, span.review-last-span, p.inquire-p, span.inquire-small-p, button.add-comment-btn, ul.left-banner-list, ul.right-banner-list {
     font-size: 0;
 }
 .purchase-wrap {
@@ -777,10 +778,12 @@ span.manager-comment, span.manager-gray-comment {
 }
 span.manager-speech-arrow, span.gray-comment-arrow {
     background: url("../img/main/blue-speech-bubble.png") no-repeat;
-    padding: 4px 10.5px;
     position: absolute;
     bottom: 20px;
     right: -21px;
+    display: inline-block;
+    width: 21px;
+    height: 8px;
 }
 span.manager-gray-comment {
     background: #e8e8e8;
@@ -884,4 +887,129 @@ a.page-after {
 }
 .pages a {
     padding: 0 3px;
+}
+
+/*banner-left start*/
+
+.left-banner {
+    width: 122px;
+    position: absolute;
+    top: 51px;
+    left: -131px;
+    padding: 0;
+}
+strong.left-banner-title {
+    background: url("../img/banner/customer-zone.png") no-repeat bottom center;
+    font-size: 0;
+    width: 120px;
+    height: 41px;
+    display: block;
+}
+ul.left-banner-list {
+    padding: 0 17px 0 18px;
+}
+ul.left-banner-list li {
+    padding: 12px 13px 9px 5px;
+    width: 85px;
+    height: 105px;
+    border-bottom: 1px solid #e0e0e0;
+}
+ul.left-banner-list li:first-child {
+    padding: 13px 13px 0 5px;
+    height: 102px;
+}
+ul.left-banner-list li:first-child a {
+    background: url("../img/banner/service-center.png") no-repeat right center;
+    padding: 0 67px 73px 0;
+}
+ul.left-banner-list li:nth-child(2) a {
+    background: url("../img/banner/infotown.png") no-repeat center center;
+    padding: 0 67px 83px 0;
+}
+ul.left-banner-list li:nth-child(3) {
+    padding: 18px 16px 20px 13px;
+}
+ul.left-banner-list li:nth-child(3) a {
+    background: url("../img/banner/gpension.png") no-repeat;
+    padding: 0 56px 66px 0;
+}
+ul.left-banner-list li:nth-child(4) {
+    padding: 11px 13px 19px 5px;
+}
+ul.left-banner-list li:nth-child(4) a, ul.left-banner-list li:nth-child(5) a {
+    background: url("../img/banner/ofarm.png") no-repeat;
+    padding: 0 67px 74px 0;
+}
+ul.left-banner-list li:nth-child(5) {
+    padding: 19px 13px 11px 5px;
+}
+ul.left-banner-list li:nth-child(5) a {
+    background: url("../img/banner/ghousing.png") no-repeat;
+}
+ul.left-banner-list li:last-child {
+    padding: 37px 16px 33px 11px;
+}
+ul.left-banner-list li:last-child a {
+    background: url("../img/banner/infotown-interior.png") no-repeat;
+    padding: 0 58px 35px 0;
+}
+.right-banner {
+    width: 122px;
+    position: absolute;
+    top: 49px;
+    right: -131px;
+    padding: 0;
+}
+strong.right-banner-title {
+    background: url("../img/banner/banner-zone.png") no-repeat bottom center;
+    width: 120px;
+    height: 42px;
+}
+ul.right-banner-list {
+    padding: 35px 4px 21px;
+}
+ul.right-banner-list li {
+    padding: 8px 0 10px;
+    border-bottom: 2px solid #f0f0f0;
+    width: 113px;
+    height: 168px;
+}
+ul.right-banner-list li a {
+    background: url("../img/banner/spao.png") no-repeat;
+    padding: 0 113px 150px 0;
+}
+ul.right-banner-list li:nth-child(2) a, ul.right-banner-list li:last-child a {
+    background: url("../img/banner/birack.png") no-repeat;
+}
+ul.right-banner-list li:nth-child(3) {
+    height: 171px;
+    padding: 8px 0 11px 0;
+}
+ul.right-banner-list li:nth-child(3) a {
+    background: url("../img/banner/thanksgiving.png") no-repeat;
+}
+.up-down-circle {
+    background: url("../img/banner/up-down.png") no-repeat center center;
+    width: 86px;
+    height: 86px;
+    font-size: 0;
+    position: absolute;
+    top: 870px;
+    right: -94px;
+}
+.up-down-positione {
+    position: relative;
+}
+a.page-up, a.page-down {
+    background: url("../img/banner/up.png") no-repeat center center;
+    padding: 0 67px 40px 0;
+    border-bottom: 1px solid #dddddd;
+    position: absolute;
+    top: 1px;
+    left: 8px;
+}
+a.page-down {
+    background: url("../img/banner/down.png") no-repeat center center;
+    top: 40px;
+    border-bottom: none;
 }
