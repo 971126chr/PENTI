@@ -7,14 +7,14 @@ label {
 
 /*start*/
 
-.wrap, .all-contents {
+.wrap {
     width: 1980px;
     margin: 0 auto;
     background: url("../img/header/all-bg.png") repeat-x;
 }
-.all-contents {
+.header, .main {
     width: 1000px;
-    background: none;
+    margin: 0 auto;
 }
 .header {
     text-align: center;
@@ -29,7 +29,7 @@ h1.penti-logo a {
     padding: 26px 87.5px 27px 81.5px;
     display: inline-block;
 }
-ul.header-list::after, ul.main-tab-list::after, ul.main-list::after, ul.suggest-list::after, ul.suggest-sns-list::after, ul.client-tab-list::after {
+ul.header-list::after, ul.main-tab-list::after, ul.main-list::after, ul.suggest-list::after, ul.suggest-sns-list::after, ul.client-tab-list::after, ul.footer-list::after {
     content: "";
     display: block;
     clear: both;
@@ -241,7 +241,10 @@ ul.main-list li:last-child dl.main-dl dd:nth-child(2) span.blue-r {
     padding-left: 16px;
     display: inline-block;
 }
-.notice h2 a {
+h3.notice-h3 {
+    display: inline-block;
+}
+h3.notice-h3 a {
     font-size: 0;
     background: url("../img/main/main-list-under-notice.png") no-repeat;
     padding: 7px 26px;
@@ -257,7 +260,7 @@ a.notice-text {
     padding-left: 1px;
     vertical-align: middle;
 }
-h2.suggest-h2 {
+h3.suggest-h3 {
     font-size: 0;
     background: url("../img/main/suggest-friend.png") no-repeat;
     padding: 0 53.5px;
@@ -515,7 +518,7 @@ ul.client-tab-list li:not(:first-child) {
     background: url("../img/main/checkpoint-box.png") no-repeat;
     height: 96px;
 }
-strong.c-p-title, ul.checkpoint-list, strong.purchase-title-text, ul.purchase-all-list, ol.easy-use-list, a.easy-use-btn, h2.discount-h2, span.discount-area, p.discount-p, span.discount-percent, h3.discount-table-caption, table.discount-table, span.discount-arrow, p.review-last-p, span.review-last-span, p.inquire-p, span.inquire-small-p, button.add-comment-btn, ul.left-banner-list, ul.right-banner-list {
+strong.c-p-title, ul.checkpoint-list, strong.purchase-title-text, ul.purchase-all-list, ol.easy-use-list, a.easy-use-btn, h3.discount-h3, span.discount-area, p.discount-p, span.discount-percent, h3.discount-table-caption, table.discount-table, span.discount-arrow, p.review-last-p, span.review-last-span, p.inquire-p, span.inquire-small-p, button.add-comment-btn, ul.left-banner-list, ul.right-banner-list {
     font-size: 0;
 }
 .purchase-wrap {
@@ -610,12 +613,12 @@ a.easy-use-btn {
     padding: 3px 0 49px 0;
     margin-top: 7px;
 }
-.discount-h2-box {
+.discount-h3-box {
     background: url("../img/main/discount-bg.png") no-repeat;
     height: 130px;
     padding-top: 37px;
 }
-h2.discount-h2 {
+h3.discount-h3 {
     background: url("../img/main/discount-deco-text.png") no-repeat center center;
     padding: 36.5px 0;
 }
@@ -898,7 +901,7 @@ a.page-after {
     left: -131px;
     padding: 0;
 }
-strong.left-banner-title {
+h4.left-banner-title {
     background: url("../img/banner/customer-zone.png") no-repeat bottom center;
     font-size: 0;
     width: 120px;
@@ -960,7 +963,7 @@ ul.left-banner-list li:last-child a {
     right: -131px;
     padding: 0;
 }
-strong.right-banner-title {
+h4.right-banner-title {
     background: url("../img/banner/banner-zone.png") no-repeat bottom center;
     width: 120px;
     height: 42px;
@@ -1012,4 +1015,67 @@ a.page-down {
     background: url("../img/banner/down.png") no-repeat center center;
     top: 40px;
     border-bottom: none;
+}
+
+/*footer start*/
+
+.footer {
+    margin-top: 101px;
+    border-top: 3px solid #d9d9d9;
+    width: 100%;
+    height: 268px;
+    background: #e8e8e8;
+    padding: 46px 0 123px;
+}
+.footer-width {
+    width: 1014px;
+    margin: 0 auto;
+}
+.footer-h2-box {
+    display: inline-block;
+    padding: 8px 4px 20px 0;
+    border-right: 1px solid #c2c2c2;
+    vertical-align: top;
+}
+h2.footer-h2 {
+    font-size: 0;
+    display: inline-block;
+    padding: 35.5px 87.5px 35.5px 87.5px;
+    background: url("../img/footer/footer-h2.png") no-repeat bottom;
+}
+.footer-text {
+    width: 828px;
+    vertical-align: super;
+    padding-left: 19px;
+    display: inline-block;
+}
+ul.footer-list li {
+    float: left;
+}
+ul.footer-list li a {
+    font-size: 12px;
+    color: #484848;
+}
+ul.footer-list li:not(:last-child) {
+    background: url("../img/footer/footer-list-bar.png") no-repeat right center;
+    padding-right: 15px;
+}
+ul.footer-list li:not(:first-child) {
+    padding-left: 15px;
+}
+dl.footer-text-list {
+    display: inline-block;
+    font-size: 11px;
+    margin-top: 14px;
+    line-height: 18px;
+}
+dl.footer-text-list dt, dl.footer-text-list dd {
+    float: left;
+    letter-spacing: 0.7px;
+}
+dl.footer-text-list dt {
+    font-weight: bold;
+}
+dl.footer-text-list dd {
+    letter-spacing: 1px;
 }
