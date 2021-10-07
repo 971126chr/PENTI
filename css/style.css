@@ -190,28 +190,28 @@ dl.main-dl dd a:hover, dl.main-dl dd a.active {
     padding: 0 4px 0 5px;*/
     text-decoration: underline;
 }
-span.red-n, span.blue-r {
+span.new, span.renewal {
     background: url("../img/main/red-n.png") no-repeat;
     font-size: 0;
     padding: 5.5px;
     vertical-align: middle;
 }
-span.blue-r {
+span.renewal {
     background: url("../img/main/blue-r.png") no-repeat;
 }
-.rn-position > span.red-n,
-ul.main-list li:nth-child(3) dl.main-dl dd:nth-child(4) span.blue-r {
+.rn-position > span.new,
+ul.main-list li:nth-child(3) dl.main-dl dd:nth-child(4) span.renewal {
     margin-left: -3px;
 }
 ul.main-list li:first-child dl.main-dl dd:nth-child(4) .rn-position,
-ul.main-list li dl.main-dl dd:nth-child(10) span.blue-r,
+ul.main-list li dl.main-dl dd:nth-child(10) span.renewal,
 ul.main-list li:first-child dl.main-dl dd:last-child .rn-position,
-ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(4) span.blue-r,
+ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(4) span.renewal,
 ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(8) .rn-position,
 ul.main-list li:nth-child(4) dl.main-dl dd:nth-child(4) .rn-position,
 ul.main-list li:nth-child(4) dl.main-dl dd:last-child .rn-position,
 ul.main-list li:last-child dl.main-dl dd:nth-child(4) .rn-position,
-ul.main-list li:last-child dl.main-dl dd:nth-child(5) span.red-n,
+ul.main-list li:last-child dl.main-dl dd:nth-child(5) span.new,
 ul.main-list li:last-child dl.main-dl dd:last-child .rn-position {
     margin-left: -1px;
 }
@@ -222,14 +222,14 @@ dl.main-dl dd a:focus, dl.main-dl dd a.focus {
     background: #8009ef;
     font-weight: bold;
 }
-ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(6) span.blue-r,
-ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(7) span.red-n,
-ul.main-list li:nth-child(3) dl.main-dl dd:nth-child(6) span.blue-r,
-ul.main-list li:nth-child(4) dl.main-dl dd:nth-child(3) span.blue-r,
-ul.main-list li:last-child dl.main-dl dd:nth-child(6) span.blue-r {
+ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(6) span.renewal,
+ul.main-list li:nth-child(2) dl.main-dl dd:nth-child(7) span.new,
+ul.main-list li:nth-child(3) dl.main-dl dd:nth-child(6) span.renewal,
+ul.main-list li:nth-child(4) dl.main-dl dd:nth-child(3) span.renewal,
+ul.main-list li:last-child dl.main-dl dd:nth-child(6) span.renewal {
     margin-left: -2px;
 }
-ul.main-list li:last-child dl.main-dl dd:nth-child(2) span.blue-r {
+ul.main-list li:last-child dl.main-dl dd:nth-child(2) span.renewal {
     margin-left: 1px;
 }
 .notice {
@@ -494,7 +494,8 @@ ul.client-tab-list li:last-child a {
 ul.client-tab-list li:hover, ul.client-tab-list li.active {
     background: #272524;
 }
-span.client-tab-list-deco {
+ul.client-tab-list li a::before {
+    content: "";
     background: url("../img/main/review-box-deco.png") no-repeat;
     padding: 17px 82px;
     position: absolute;
@@ -766,7 +767,7 @@ button.add-comment-btn {
     padding: 20px 0;
     border-bottom: 1px solid #e8e8e8;
 }
-span.manager-comment, span.manager-gray-comment {
+span.manager-comment, .manager-gray-comment {
     background: #800aef;
     border-radius: 8px;
     font-size: 12px;
@@ -788,7 +789,8 @@ span.manager-speech-arrow, span.gray-comment-arrow {
     width: 21px;
     height: 8px;
 }
-span.manager-gray-comment {
+.manager-gray-comment {
+    display: inline-block;
     background: #e8e8e8;
     font-weight: lighter;
     color: #484848;
@@ -802,10 +804,10 @@ strong.gray-comment-strong {
     color: #800aef;
     display: block;
 }
-span.manager-gray-comment p:nth-child(2) {
+.manager-gray-comment p:nth-child(2) {
     margin-top: 12px;
 }
-span.manager-gray-comment p:nth-child(3), span.manager-gray-comment p:nth-child(4) {
+.manager-gray-comment p:nth-child(3), .manager-gray-comment p:nth-child(4) {
     margin-top: 18px;
 }
 button.del-x {
@@ -1067,7 +1069,7 @@ dl.footer-text-list {
     display: inline-block;
     font-size: 11px;
     margin-top: 14px;
-    line-height: 18px;
+    line-height: 17px;
 }
 dl.footer-text-list dt, dl.footer-text-list dd {
     float: left;
@@ -1078,6 +1080,16 @@ dl.footer-text-list dt {
 }
 dl.footer-text-list dd {
     letter-spacing: 1px;
+}
+p.footer-p {
+    font-size: 11px;
+    color: #939393;
+    margin-top: 4px;
+}
+p.copyrignt {
+    font-size: 10px;
+    color: #939393;
+    margin-top: 9px;
 }
 
 /* 반응형 start */
