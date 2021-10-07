@@ -720,8 +720,7 @@ span.review-last-span {
     display: block;
     margin: 52px 0 46px 0;
 }
-a.review-more-dots {
-    display: block;
+.review-more-dots {
     text-align: center;
     margin-top: 66px;
 }
@@ -1002,7 +1001,7 @@ ul.right-banner-list li:nth-child(3) a {
     top: 870px;
     right: -94px;
 }
-.up-down-positione {
+.up-down-position {
     position: relative;
 }
 a.page-up, a.page-down {
@@ -1093,4 +1092,17 @@ p.copyrignt {
 }
 
 /* 반응형 start */
+
+/*태블릿 start*/
+
+@media all and (max-width:1023px) {
+
+}
+
+/*스마트폰 화면*/
+
+@media all and (max-width:767px) {
+
+}
+
 /* 반응형 end */
