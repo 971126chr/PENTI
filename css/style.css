@@ -1110,22 +1110,22 @@ p.copyrignt {
     }
     .header, .main {
         margin: 0;
-        width: 800px;
+        max-width: 800px;
         padding-left: 10px;
     }
     .lowest-price {
-        width: 800px;
+        max-width: 800px;
         text-align: center;
     }
     .notice {
         line-height: 40px;
     }
     .notice-box, .suggest {
-        width: 26%;
+        width: 100%;
         padding-left: 8px;
     }
     .suggest {
-        width: 74%;
+        padding-left: 13px;
     }
     .riverhill, .discount-img-box > img, .review-last > img {
         width: 760px;
@@ -1194,6 +1194,13 @@ p.copyrignt {
         top: 80px;
         left: 25px;
     }
+    span.discount-arrow {
+        right: -15px;
+    }
+    table.discount-table > tbody > tr > td:nth-child(3) > span.discount-arrow,
+    table.discount-table > tbody > tr > td:last-child > span.discount-arrow {
+        right: -12px;
+    }
     textarea.add-comment-text-box {
         width: 574px;
     }
@@ -1223,6 +1230,13 @@ p.copyrignt {
 /*스마트폰 화면*/
 
 @media all and (max-width:767px) {
+    .wrap {
+        margin: 0;
+        max-width: 767px;
+    }
+    .header, .main {
+        width: 600px;
+    }
     .menu {
         display: initial;
     }
@@ -1239,11 +1253,12 @@ p.copyrignt {
         top: 20px;
         left: 15px;
     }
-    .menu input.hamburger-chk:checked + label {
+    .menu input[type=checkbox].hamburger-chk:checked + label {
         background: url("../img/main/close.png") no-repeat;
         background-size: 45px 45px;
         width: 45px;
         height: 45px;
+        position: absolute;
     }
     /*
     button.hamburger {
@@ -1257,12 +1272,26 @@ p.copyrignt {
         left: 15px;
     }
     */
-    .notice-box, .suggest {
-        width: 100%;
+    ul.main-tab-list::after {
+        clear: none;
     }
-    .suggest {
-        padding-left: 12px;
+    ul.main-tab-list li {
+        float: none;
+    }
+    ul.main-tab-list li:not(:last-child) {
+        margin-right: 0;
+    }
+    span.speech-bubble {
+        top: 0px;
+        right: -32px;
+    }
+    ul.suggest-list {
+        margin-left: 0;
+    }
+    .lowest-price {
+        max-width: 590px;
+    }
+    .riverhill, .discount-img-box > img, .review-last > img {
+        width: 550px;
     }
 }
-
-/* 반응형 end */
