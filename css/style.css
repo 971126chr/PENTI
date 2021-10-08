@@ -57,6 +57,14 @@ ul.header-list li a:hover, ul.header-list li a.active {
     font-weight: bold;
     color: #8009ef;
 }
+.menu {
+    display: none;
+}
+button.hamburger {
+    display: none;
+    font-size: 0;
+    border: none;
+}
 
 /*main start*/
 
@@ -1096,13 +1104,165 @@ p.copyrignt {
 /*태블릿 start*/
 
 @media all and (max-width:1023px) {
-
+    .wrap {
+        margin: 0;
+        max-width: 1023px;
+    }
+    .header, .main {
+        margin: 0;
+        width: 800px;
+        padding-left: 10px;
+    }
+    .lowest-price {
+        width: 800px;
+        text-align: center;
+    }
+    .notice {
+        line-height: 40px;
+    }
+    .notice-box, .suggest {
+        width: 26%;
+        padding-left: 8px;
+    }
+    .suggest {
+        width: 74%;
+    }
+    .riverhill, .discount-img-box > img, .review-last > img {
+        width: 760px;
+    }
+    .sale-percent {
+        padding-left: 0;
+    }
+    .percent-price {
+        width: 57%;
+    }
+    span.percent65 {
+        background-size: 180px 80px;
+        padding: 47px 96.5px;
+    }
+    span.sale-price {
+        background-size: 230px 85px;
+        margin-left: 0;
+        padding: 47.5px 116px;
+    }
+    .riverhill-buy-ticket {
+        width: 43%;
+    }
+    .c-p-box {
+        padding-left: 10px;
+    }
+    .purchase-box {
+        background-size: 770px 340px;
+    }
+    .review {
+        padding: 21px 0 0 5px;
+    }
+    ul.purchase-all-list li dl.purchase-dl {
+        margin-top: 10px;
+    }
+    ul.purchase-all-list li:first-child dl.purchase-dl {
+        background: url("../img/main/purchase-list-1.png") no-repeat left top;
+        padding: 39.5px 181.5px;
+        background-size: 350px;
+    }
+    .review-notice-box {
+        margin: 18px 0 0 5px;
+    }
+    span.purchase-text {
+        background-size: 345px;
+        padding: 34px 173.5px;
+    }
+    .spring-position {
+        left: 190px;
+    }
+    strong.easy-use-title {
+        padding: 15px 145px 15px 155px;
+    }
+    ol.easy-use-list {
+        margin-top: 20px;
+        background: url("../img/main/easy-use-list-tablet.png") no-repeat;
+        padding: 170px 260px;
+        background-size: 540px;
+        display: inline-block;
+    }
+    a.easy-use-btn {
+        background: url("../img/main/check-btn-tablet.png") no-repeat center;
+        padding: 80px 389px;
+        background-size: 700px;
+    }
+    span.discount-percent {
+        top: 80px;
+        left: 25px;
+    }
+    textarea.add-comment-text-box {
+        width: 574px;
+    }
+    span.manager-comment, .manager-gray-comment {
+        text-align: initial;
+    }
+    .manager-gray-comment {
+        width: 540px;
+        text-align: initial;
+    }
+    .right-banner, .left-banner {
+        width: 122px;
+    }
+    .right-banner {
+        right: -140px;
+    }
+    .left-banner {
+        top: 840px;
+        left: 818px;
+    }
+    .up-down-circle {
+        top: 1530px;
+        right: -105px;
+    }
 }
 
 /*스마트폰 화면*/
 
 @media all and (max-width:767px) {
-
+    .menu {
+        display: initial;
+    }
+    input.hamburger-chk {
+        display: none;
+    }
+    .menu input.hamburger-chk + label {
+        cursor: pointer;
+        background: url("../img/main/hamburger.png") no-repeat;
+        background-size: 45px 45px;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+    }
+    .menu input.hamburger-chk:checked + label {
+        background: url("../img/main/close.png") no-repeat;
+        background-size: 45px 45px;
+        width: 45px;
+        height: 45px;
+    }
+    /*
+    button.hamburger {
+        background: url("../img/main/hamburger.png") no-repeat center center;
+        background-size: 45px 45px;
+        width: 30px;
+        height: 30px;
+        display: initial;
+        position: absolute;
+        top: 20px;
+        left: 15px;
+    }
+    */
+    .notice-box, .suggest {
+        width: 100%;
+    }
+    .suggest {
+        padding-left: 12px;
+    }
 }
 
 /* 반응형 end */
