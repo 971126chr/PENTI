@@ -1209,7 +1209,6 @@ p.copyrignt {
     }
     .manager-gray-comment {
         width: 540px;
-        text-align: initial;
     }
     .right-banner, .left-banner {
         width: 122px;
@@ -1293,5 +1292,86 @@ p.copyrignt {
     }
     .riverhill, .discount-img-box > img, .review-last > img {
         width: 550px;
+    }
+    .sale-percent {
+        min-height: 265px;
+    }
+    .percent-price, .riverhill-buy-ticket {
+        display: block;
+        width: 100%;
+    }
+    .riverhill-buy-ticket {
+        padding: 0;
+        background: none;
+    }
+    span.now-buyer {
+        background: url("../img/main/now-buyer.png") no-repeat center;
+        display: block;
+        text-align: initial;
+    }
+    .c-p-text {
+        background: url("../img/main/checkpoint.png") no-repeat;
+    }
+    ul.checkpoint-list {
+        background: url("../img/main/cp-list-all.png") no-repeat bottom center;
+        padding: 30.5px 250px 65px;
+    }
+    .purchase-box {
+        min-height: 550px;
+    }
+    .purchase-contents, .review-notice-box {
+        display: block;
+        margin-top: 10px;
+    }
+    ul.purchase-all-list li:first-child dl.purchase-dl {
+        background-size: 400px;
+    }
+    ul.purchase-all-list li dl.purchase-dl {
+        background-size: 345px;
+    }
+    ul.purchase-all-list li:last-child {
+        margin-top: 17px;
+    }
+    span.purchase-text {
+        display: block;
+        background-size: 365px;
+    }
+    .review-notice-box {
+        margin: 28px 0 0 0px;
+        padding-left: 23px;
+    }
+    .spring-position {
+        left: 90px;
+    }
+    a.easy-use-btn {
+        margin-top: -10px;
+        background: url("../img/main/check-btn-tablet.png") no-repeat left center;
+        background-size: 580px;
+    }
+    span.inquire-small-p {
+        padding: 12px 170.5px 6px 270.5px;
+        background-size: 320px;
+    }
+    textarea.add-comment-text-box {
+        width: 364px;
+    }
+    .manager-gray-comment {
+        width: 336px;
+    }
+    .left-banner {
+        left: 619px;
+    }
+    .footer-width {
+        max-width: 767px;
+    }
+    .footer-text {
+        max-width: 581px;
+        padding-left: 0;
+    }
+    ul.footer-list li:not(:first-child) {
+        padding-left: 3.6px;
+    }
+    ul.footer-list li:not(:last-child) {
+        padding-right: 3.6px;
     }
 }
