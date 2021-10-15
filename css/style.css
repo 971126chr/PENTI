@@ -347,12 +347,9 @@ span.lowest-price-ribbon {
 }
 .riverhill {
     background: url("../img/main/red-post-bg.png") no-repeat;
-    width: 960px;
-    height: 400px;
 }
 .riverhill-text-box {
     background: url("../img/main/lowest-price-black-bg.png") no-repeat;
-    width: 380px;
     height: 400px;
     padding: 100px 39px 0 34px;
     font-size: 0;
@@ -1110,11 +1107,9 @@ p.copyrignt {
     }
     .header, .main {
         margin: 0;
-        max-width: 800px;
         padding-left: 10px;
     }
     .lowest-price {
-        max-width: 800px;
         text-align: center;
     }
     .notice {
@@ -1128,7 +1123,7 @@ p.copyrignt {
         padding-left: 13px;
     }
     .riverhill, .discount-img-box > img, .review-last > img {
-        width: 760px;
+        width: 100%;
     }
     .sale-percent {
         padding-left: 0;
@@ -1150,9 +1145,6 @@ p.copyrignt {
     }
     .c-p-box {
         padding-left: 10px;
-    }
-    .purchase-box {
-        background-size: 770px 340px;
     }
     .review {
         padding: 21px 0 0 5px;
@@ -1232,9 +1224,6 @@ p.copyrignt {
     .wrap {
         margin: 0;
         max-width: 767px;
-    }
-    .header, .main {
-        width: 600px;
     }
     .menu {
         display: initial;
