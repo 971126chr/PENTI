@@ -433,12 +433,26 @@ strong.buy-ticket-people {
     color: #8009ef;
 }
 span.now-buyer {
+    display: block;
+}
+span.now-buyer-text {
     font-size: 0;
     background: url("../img/main/now-buyer.png") no-repeat;
-    padding: 14px 104px;
+    padding: 14px 71.5px;
     display: inline-block;
     text-align: center;
     margin-top: 9px;
+}
+span.now-buyer-num {
+    font-size: 30px;
+    font-weight: bold;
+    color: #8009ef;
+    vertical-align: middle;
+}
+span.now-buyer-people {
+    font-size: 0;
+    background: url("../img/main/now-buyer-people.png") no-repeat;
+    padding: 14px 12px;
 }
 button.buy-ticket-btn {
     background: url("../img/main/ticket-buy-btn-all.png") no-repeat;
@@ -1122,29 +1136,21 @@ p.copyrignt {
     .suggest {
         padding-left: 13px;
     }
-    .riverhill, .discount-img-box > img, .review-last > img {
-        width: 100%;
-    }
     .sale-percent {
         padding-left: 0;
     }
     .percent-price {
         width: 57%;
     }
-    span.percent65 {
-        background-size: 180px 80px;
-        padding: 47px 96.5px;
-    }
-    span.sale-price {
-        background-size: 230px 85px;
-        margin-left: 0;
-        padding: 47.5px 116px;
-    }
     .riverhill-buy-ticket {
         width: 43%;
     }
     .c-p-box {
         padding-left: 10px;
+    }
+    .c-p-text {
+        background: url("../img/main/c-p-tablet.png") no-repeat center;
+        height: 72px;
     }
     .review {
         padding: 21px 0 0 5px;
@@ -1172,10 +1178,9 @@ p.copyrignt {
     }
     ol.easy-use-list {
         margin-top: 20px;
-        background: url("../img/main/easy-use-list-tablet.png") no-repeat;
+        background: url("../img/main/easy-use-list-tablet.png") no-repeat center;
         padding: 170px 260px;
-        background-size: 540px;
-        display: inline-block;
+        display: block;
     }
     a.easy-use-btn {
         background: url("../img/main/check-btn-tablet.png") no-repeat center;
@@ -1193,24 +1198,11 @@ p.copyrignt {
     table.discount-table > tbody > tr > td:last-child > span.discount-arrow {
         right: -12px;
     }
-    textarea.add-comment-text-box {
-        width: 574px;
-    }
     span.manager-comment, .manager-gray-comment {
         text-align: initial;
     }
-    .manager-gray-comment {
-        width: 540px;
-    }
     .right-banner, .left-banner {
-        width: 122px;
-    }
-    .right-banner {
-        right: -140px;
-    }
-    .left-banner {
-        top: 840px;
-        left: 818px;
+        display: none;
     }
     .up-down-circle {
         top: 1530px;
@@ -1295,7 +1287,6 @@ p.copyrignt {
     }
     span.now-buyer {
         background: url("../img/main/now-buyer.png") no-repeat center;
-        display: block;
         text-align: initial;
     }
     .c-p-text {
