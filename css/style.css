@@ -1171,4 +1171,93 @@ p.copyrignt {
     .up-down-circle {
         right: 20px;
     }
+    span.percent65 {
+        font-size: 120px;
+        background: none;
+        padding: 0;
+        font-weight: bold;
+        text-shadow: 4px 6px 0 #dbdbdb;
+    }
+    span.sale-price {
+        margin-left: 20px;
+        background: none;
+        vertical-align: bottom;
+        padding: 0;
+        position: relative;
+    }
+    span.sale-price-arrow {
+        background: url("../img/main/sale-price-arrow.png") no-repeat;
+        padding: 17px 88px;
+        position: absolute;
+        top: 13px;
+        left: -30px;
+    }
+    span.origin-price, span.sale-price-text {
+        font-size: 24px;
+        color: #4f4f4f;
+        font-weight: bold;
+    }
+    span.price-kor {
+        font-size: 11px;
+        font-weight: bold;
+        color: #292828;
+        margin-left: 5px;
+    }
+    span.sale-price-text {
+        font-size: 72px;
+        /*
+        background: linear-gradient(to top, #8009ef, #af61f9);
+        -webkit-background-clip: text;
+        */
+        color: #8009ef;
+        text-shadow: 4px 6px 0 #dbdbdb;
+        /*color: transparent;*/
+        letter-spacing: -2.5px;
+    }
+    .add-comment-box {
+        padding-right: 161px;
+        position: relative;
+    }
+    textarea.add-comment-text-box {
+        width: 100%;
+    }
+    button.add-comment-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .comments-wrap {
+        position: relative;
+        padding-left: 191px;
+    }
+    .manager-gray-comment {
+        width: 100%;
+    }
+    span.manager-comment, span.client-comment {
+        position: absolute;
+        top: 20px;
+        left: 0;
+    }
+    .footer-width, .footer-text {
+        width: 100%;
+    }
+    .footer-h2-box {
+        display: block;
+        text-align: center;
+        padding-top: 0;
+        border-right: none;
+    }
+    .footer-text {
+        padding-left: 0;
+    }
+    ul.footer-list {
+        max-width: 731px;
+        margin: 0 auto;
+    }
+    dl.footer-text-list, p.footer-p {
+        display: none;
+    }
+    p.copyrignt {
+        text-align: center;
+    }
 }
