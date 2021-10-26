@@ -29,6 +29,9 @@ h1.penti-logo a {
     padding: 26px 87.5px 27px 81.5px;
     display: inline-block;
 }
+button.smartphone-login {
+    display: none;
+}
 ul.header-list::after, ul.main-tab-list::after, ul.main-list::after, ul.suggest-list::after, ul.suggest-sns-list::after, ul.client-tab-list::after, ul.footer-list::after {
     content: "";
     display: block;
@@ -69,13 +72,15 @@ button.hamburger {
 /*main start*/
 
 .main {
-    padding-top: 11px;
-    background: url("../img/header/header-border.png") no-repeat center top;
+    background: #f1f1f1;
+    padding-bottom: 101px;
     position: relative;
 }
 .main-tab-list-position {
     text-align: center;
     line-height: 0;
+    padding-top: 11px;
+    background: url("../img/header/header-border.png") no-repeat center top;
 }
 ul.main-tab-list, .rn-position, .notice h2, ul.suggest-list, ul.suggest-sns-list, .purchase-contents, .review-notice-box {
     display: inline-block;
@@ -815,7 +820,7 @@ span.manager-speech-arrow, span.gray-comment-arrow {
     width: 742px;
     margin-left: 36px;
     line-height: 18px;
-    padding: 16.5px 0 16.5px 20px;
+    padding: 16.5px 15px 16.5px 20px;
     letter-spacing: 0;
 }
 strong.gray-comment-strong {
@@ -1040,7 +1045,6 @@ a.page-down {
 /*footer start*/
 
 .footer {
-    margin-top: 101px;
     border-top: 3px solid #d9d9d9;
     width: 100%;
     height: 268px;
@@ -1150,13 +1154,35 @@ p.copyrignt {
     .purchase-wrap {
         text-align: center;
     }
+    .review > .spring-position > span.spring-left,
+    .review > .spring-position > span.spring-right {
+        top: 22px;
+    }
+    .spring-position {
+        left: 0;
+        bottom: 0;
+        position: relative;
+    }
+    span.spring-left, span.spring-right {
+        position: absolute;
+    }
+    span.spring-left {
+        left: 150px;
+    }
+    span.spring-right {
+        right: 150px;
+        margin-left: 0;
+    }
+    .easy-use > .spring-position > span.spring-left,
+    .easy-use > .spring-position > span.spring-right {
+        top: 8px;
+    }
     .review-notice-box {
         margin: 30px 0 0 0;
     }
     ol.easy-use-list {
         background: url("../img/main/easy-use-list-tablet.png") no-repeat center;
-        background-size: 100%;
-        padding: 220px 0;
+        padding: 150px 0;
     }
     a.easy-use-btn {
         background: url("../img/main/check-btn-tablet.png") no-repeat center;
@@ -1214,11 +1240,20 @@ p.copyrignt {
         /*color: transparent;*/
         letter-spacing: -2.5px;
     }
+    span.discount-arrow {
+        background-size: 100% 100%;
+        padding: 136px 30px;
+        right: -30px;
+    }
+    table.discount-table > tbody > tr > td:nth-child(3) > span.discount-arrow,
+    table.discount-table > tbody > tr > td:last-child > span.discount-arrow {
+        right: -25px;
+    }
     .add-comment-box {
         padding-right: 161px;
         position: relative;
     }
-    textarea.add-comment-text-box {
+    textarea.add-comment-text-box, .footer-width, .footer-text {
         width: 100%;
     }
     button.add-comment-btn {
@@ -1231,15 +1266,13 @@ p.copyrignt {
         padding-left: 191px;
     }
     .manager-gray-comment {
-        width: 100%;
+        width: 94.4%;
+        min-width: 490px;
     }
     span.manager-comment, span.client-comment {
         position: absolute;
         top: 20px;
         left: 0;
-    }
-    .footer-width, .footer-text {
-        width: 100%;
     }
     .footer-h2-box {
         display: block;
@@ -1259,5 +1292,26 @@ p.copyrignt {
     }
     p.copyrignt {
         text-align: center;
+    }
+    /*스마트폰 화면*/
+
+    @media all and (max-width:767px) {
+        .wrap {
+            max-width: 767px;
+        }
+        button.smartphone-login {
+            display: block;
+            font-size: 0;
+            background: url("../img/main/smartphone-image.png") no-repeat;
+        }
+        ul.header-list {
+            z-index: 1;
+        }
+        ul.header-list li {
+            float: none;
+        }
+        button.hamburger {
+            display: block;
+        }
     }
 }
