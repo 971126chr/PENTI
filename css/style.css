@@ -1405,17 +1405,21 @@ p.copyrignt {
             top: -65px;
             left: -10px;
             background: none;
+            z-index: 1;
         }
         ul.main-tab-list li, ul.main-list li {
             float: none;
         }
         .main-list-box {
+            display: none;
+        }
+        .phone-main-list-box {
             width: 60px;
             border-top: none;
             border-left: 6px solid #8009ef;
             position: relative;
         }
-        .main-list-box::before {
+        .phone-main-list-box::before {
             background: url("../img/main/main-dl-blue-arrow.png") no-repeat;
             content: "";
             width: 21px;
