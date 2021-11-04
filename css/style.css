@@ -1390,6 +1390,18 @@ p.copyrignt {
         ul.header-list li:not(:first-child) a {
             padding: 0;
         }
+        .hamburger-click {
+            display: none;
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: var(--app-drawer-scrim-background, rgba(0, 0, 0, 0.5));
+            height: 100%;
+            z-index: 1;
+        }
         button.hamburger {
             display: block;
             background: url("../img/main/hamburger.png") no-repeat;
@@ -1444,6 +1456,47 @@ p.copyrignt {
             padding: 15px 0 10px 4px;
         }
         dl.main-dl dd {
+            display: none;
+        }
+        .up-down-circle, a.page-up, a.page-down {
+            background: none;
+            border-bottom: none;
+            padding: 0;
+        }
+        .up-down-circle {
+            width: 36px;
+            height: 36px;
+            background: url("../img/main/smartphone-top.png") no-repeat;
+            position: fixed;
+            top: 790px;
+            left: initial;
+            right: 15px;
+        }
+        ol.easy-use-list {
+            background: url("../img/main/c-p-list-smartphone.png") no-repeat center;
+            padding: 225px 0;
+        }
+        a.easy-use-btn {
+            background: url("../img/main/check-btn-smartphone.png") no-repeat center;
+        }
+        a.smartphone-top {
+            padding: 18px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        ul.client-tab-list li {
+            width: 116px;
+        }
+        ul.client-tab-list li a {
+            padding: 18.5px 58px;
+        }
+        .discount-h3-box {
+            display: block;
+            background: url("../img/main/smartphone-popup.png") no-repeat top;
+            min-height: 873px;
+        }
+        .discount-img-box, .discount-img-box > img, span.discount-area, span.discount-percent, p.discount-p, .discount-table-box {
             display: none;
         }
     }
