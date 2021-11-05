@@ -1180,6 +1180,7 @@ p.copyrignt {
     p.review-notice-text {
         text-align: initial;
         margin-left: 0;
+        padding-left: 4.3%;
     }
     .review > .spring-position > span.spring-left,
     .review > .spring-position > span.spring-right {
@@ -1393,14 +1394,14 @@ p.copyrignt {
         .hamburger-click {
             display: none;
             opacity: 1;
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
             background: var(--app-drawer-scrim-background, rgba(0, 0, 0, 0.5));
             height: 100%;
-            z-index: 1;
+            z-index: 2;
         }
         button.hamburger {
             display: block;
@@ -1410,7 +1411,14 @@ p.copyrignt {
         }
         .main-hamburger-click {
             position: relative;
-            padding-left: 120px;
+            padding-left: 94px;
+        }
+        ul.main-list li:first-child dl.main-dl dt a, 
+        ul.main-list li:nth-child(2) dl.main-dl dt a, 
+        ul.main-list li:nth-child(3) dl.main-dl dt a, 
+        ul.main-list li:nth-child(4) dl.main-dl dt a, 
+        ul.main-list li:last-child dl.main-dl dt a {
+            background-position: center center;
         }
         .suggest {
             position: relative;
