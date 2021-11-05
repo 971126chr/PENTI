@@ -1412,6 +1412,27 @@ p.copyrignt {
             position: relative;
             padding-left: 120px;
         }
+        .suggest {
+            position: relative;
+        }
+        ul.suggest-list {
+            margin-left: 0;
+        }
+        ul.suggest-list li, ul.suggest-sns-list li {
+            line-height: 25px;
+        }
+        ul.suggest-list > li:first-child, ul.suggest-list > li:nth-child(2) {
+            padding-right: 10px;
+        }
+        ul.suggest-list > li:nth-child(2), ul.suggest-list > li:last-child {
+            padding-left: 0;
+        }
+        ul.suggest-list > li:nth-child(3), ul.suggest-list > li:nth-child(4) {
+            padding: 0 10px;
+        }
+        ul.suggest-list li:not(:last-child) {
+            background: none;
+        }
         .main-tab-list-position {
             position: absolute;
             top: -65px;
@@ -1498,6 +1519,19 @@ p.copyrignt {
         }
         .discount-img-box, .discount-img-box > img, span.discount-area, span.discount-percent, p.discount-p, .discount-table-box {
             display: none;
+        }
+        .add-comment-box {
+            padding: 15px 65px 15px 15px;
+            height: 70px;
+        }
+        textarea.add-comment-text-box {
+            padding: 5px 0 0 5px;
+        }
+        button.add-comment-btn {
+            background: url("../img/main/add-comment-btn-smartphone.png") no-repeat;
+            padding: 20.5px 25px;
+            top: 15px;
+            right: 15px;
         }
     }
 }
