@@ -1469,6 +1469,17 @@ p.copyrignt {
             top: 0;
             left: -26px;
         }
+        .riverhill {
+            background-size: 100%;
+        }
+        .riverhill-text-box {
+            background: none;
+            height: 100%;
+            padding: 30px 39px 30px 34px;
+        }
+        p.riverhill-text {
+            background-size: 50%;
+        }
         ul.main-list li {
             width: 100%;
         }
@@ -1540,6 +1551,9 @@ p.copyrignt {
             padding: 20.5px 25px;
             top: 15px;
             right: 15px;
+        }
+        ul.footer-list {
+            padding-left: 30px;
         }
     }
 }
